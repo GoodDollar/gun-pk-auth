@@ -51,7 +51,7 @@ export const genDeterministicSEAPair = (seed) => {
 export const gunAuth = async (gunInstance, seed) => {
   const user = gunInstance.user();
   const login = new Promise((res, rej) => {
-    user.auth(null, genDeterministicSEAPair(seed), (authres) => {
+    user.auth(genDeterministicSEAPair(seed), (authres) => {
       if (authres.err) rej(authres.err);
       else res(authres);
     });
