@@ -18,9 +18,9 @@ export const genDeterministicKeyPair = (seed) => {
   let jwk = {
     kty: "EC",
     crv: "P-256",
-    x: tob64u(x.toBuffer().toString("base64")),
-    y: tob64u(y.toBuffer().toString("base64")),
-    d: tob64u(priv.toBuffer().toString("base64")),
+    x: tob64u(x.toArrayLike(Buffer).toString("base64")),
+    y: tob64u(y.toArrayLike(Buffer).toString("base64")),
+    d: tob64u(priv.toArrayLike(Buffer).toString("base64")),
   };
   return jwk;
 };
