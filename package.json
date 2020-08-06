@@ -1,6 +1,6 @@
 {
   "name": "@gooddollar/gun-pk-auth",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "use privatekey as seed for gun SEA authentication",
   "repository": {
     "type": "git",
