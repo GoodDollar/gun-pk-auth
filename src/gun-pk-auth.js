@@ -18,9 +18,9 @@ export const genDeterministicKeyPair = (seed) => {
   let jwk = {
     kty: "EC",
     crv: "P-256",
-    x: tob64u(x.toArrayLike(Buffer).toString("base64")),
-    y: tob64u(y.toArrayLike(Buffer).toString("base64")),
-    d: tob64u(priv.toArrayLike(Buffer).toString("base64")),
+    x: tob64u(x.toArrayLike(Buffer,null,32).toString("base64")), //use length 32 so its zero padded as webcrypto expects
+    y: tob64u(y.toArrayLike(Buffer,null,32).toString("base64")),
+    d: tob64u(priv.toArrayLike(Buffer,null,32).toString("base64")),
   };
   return jwk;
 };

@@ -1,5 +1,5 @@
-import Gun from "gun";
-import SEA from "gun/sea";
+import Gun from "@gooddollar/gun";
+import SEA from "@gooddollar/gun/sea";
 import { assert } from "chai";
 import * as pkAuth from "../src/gun-pk-auth";
 describe("deterministic pk auth", () => {
@@ -15,6 +15,14 @@ describe("deterministic pk auth", () => {
     assert.isString(keypair.d);
     assert.isString(keypair.y);
     assert.isString(keypair.x);
+  });
+
+  it("should pad correctly", () => {
+    const keypair = pkAuth.genDeterministicKeyPair("0a303bdb819a251f41bfc646a54f90b340d22d9d523ee12cd092dd1090e0cd926e8a6a5e4a8e4489"); //this seed creates a 31 bytes x value
+    assert.containsAllKeys(keypair, ["d", "y", "x"]);
+    assert.lengthOf(Buffer.from(keypair.d,"base64").toString("hex"),64);
+    assert.lengthOf(Buffer.from(keypair.y,"base64").toString("hex"),64);
+    assert.lengthOf(Buffer.from(keypair.x,"base64").toString("hex"),64);
   });
 
   it("should create different keypair for different seeds", () => {
@@ -43,5 +51,5 @@ describe("deterministic pk auth", () => {
     assert.equal(keypair.x + "." + keypair.y, loggedin.pub);
     const profile = await gun.get("~" + loggedin.pub).then();
     assert.containsAllKeys(profile, ["epub", "pub"]);
-  }).timeout(5000);
+  }).timeout(10000);
 });

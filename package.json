@@ -32,9 +32,9 @@
     "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "@babel/register": "^7.10.1",
+    "@gooddollar/gun": "^0.2020.826",
     "@gooddollar/gun-pk-auth": "^1.0.1",
     "chai": "^4.2.0",
-    "gun": "*",
     "microbundle": "latest",
     "mocha": "latest"
   },
