@@ -1,6 +1,6 @@
 {
   "name": "@gooddollar/gun-pk-auth",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "use privatekey as seed for gun SEA authentication",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "source": "src/gun-pk-auth.js",
   "main": "dist/gun-pk-auth.js",
   "scripts": {
-    "prepack":"npm run build",
+    "prepack": "npm run build",
     "build": "microbundle",
     "dev": "microbundle watch",
     "test": "export NODE_ENV=test;mocha --require @babel/register --exit"
