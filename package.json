@@ -13,6 +13,7 @@
   "source": "src/gun-pk-auth.js",
   "main": "dist/gun-pk-auth.js",
   "scripts": {
+    "prepack":"npm run build",
     "build": "microbundle",
     "dev": "microbundle watch",
     "test": "export NODE_ENV=test;mocha --require @babel/register --exit"
