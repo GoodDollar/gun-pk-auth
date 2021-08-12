@@ -912,6 +912,18 @@
   dependencies:
     elliptic "^6.5.2"
 
+"@gooddollar/gun@^0.2020.826":
+  version "0.2020.910"
+  resolved "https://registry.yarnpkg.com/@gooddollar/gun/-/gun-0.2020.910.tgz#5a2a64c0dc70ef74cf97b2603dc418a0c4fb284e"
+  integrity sha512-oI5cPBx1i1E0x9i6+gvlWuEaPbrndnolunOxF069u/im2W8e5jWD4vDTqxRdJ20Y+xl1HWxXHui/Wb64TLcAaA==
+  dependencies:
+    ws "^7.2.1"
+  optionalDependencies:
+    "@peculiar/webcrypto" "^1.1.1"
+    buffer "^5.4.3"
+    emailjs "^2.2.0"
+    text-encoding "^0.7.0"
+
 "@peculiar/asn1-schema@^2.0.1", "@peculiar/asn1-schema@^2.0.3":
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@peculiar/asn1-schema/-/asn1-schema-2.0.5.tgz#ba6c5a107eec16a23804d0176a3595837b53c0e9"
@@ -2287,18 +2299,6 @@ growl@1.10.5:
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
   integrity sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
 
-gun@*:
-  version "0.2020.520"
-  resolved "https://registry.yarnpkg.com/gun/-/gun-0.2020.520.tgz#3bf7c9c0c83ba04aee94c0157c4d4e0a64e865ad"
-  integrity sha512-hMDmj4QQnejweZEy4njbyNlll+GO7H8XIq/SdQ23kFV29B6HqA0+bQmhLCxWKLwQvfRXx9SgSXG/ImGrER/CqQ==
-  dependencies:
-    ws "^7.2.1"
-  optionalDependencies:
-    "@peculiar/webcrypto" "^1.1.1"
-    buffer "^5.4.3"
-    emailjs "^2.2.0"
-    text-encoding "^0.7.0"
-
 gzip-size@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-3.0.0.tgz#546188e9bdc337f673772f81660464b389dce520"
@@ -3419,9 +3419,9 @@ path-is-absolute@^1.0.0:
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-type@^4.0.0:
   version "4.0.0"
